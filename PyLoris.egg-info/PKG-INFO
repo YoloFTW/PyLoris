@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: PyLoris
-Version: 1.0.2
+Version: 1.0.0
 Summary: Test websites for slow loris
-Home-page: UNKNOWN
+Home-page: https://github.com/YoloFTW/PyLoris
 Author: YoloFTW
 License: UNKNOWN
 Keywords: python,slow loris,test,loris,slow lorris
