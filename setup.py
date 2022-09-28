@@ -1,12 +1,20 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.1'
+import codecs
+import os
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+
+VERSION = '1.0.0'
 DESCRIPTION = 'Test websites for slow loris'
-LONG_DESCRIPTION = 'A package that allows you to test websites for the slow loris vulnerability'
+LONG_DESCRIPTION = long_description
 
 # Setting up
 setup(
-    name="PyLorisPyPITest",
+    name="PyLoris",
     version=VERSION,
     author="YoloFTW",
     description=DESCRIPTION,
