@@ -18,7 +18,7 @@ setup(
     version=VERSION,
     author="YoloFTW",
     description=DESCRIPTION,
-    url='https://github.com/YoloFTW/PyLoris'
+    url='https://github.com/YoloFTW/PyLoris',
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
