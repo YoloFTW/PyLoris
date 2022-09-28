@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PyLoris.egg-info/PKG-INFO
+PyLoris.egg-info/SOURCES.txt
+PyLoris.egg-info/dependency_links.txt
+PyLoris.egg-info/requires.txt
+PyLoris.egg-info/top_level.txt
