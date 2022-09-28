@@ -1,5 +1,5 @@
 __pycache__/
 build/
 dist/
-
+PyLoris.egg-info/
 test.py
