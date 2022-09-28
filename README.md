@@ -41,7 +41,7 @@ $ pip install PyLoris
 ```python
 from PyLoris import SlowLoris
 
-SlowLorisTest = SlowLoris("your-site.com", 2)
+SlowLorisTest = SlowLoris("your-site.com", number_of_open_socket_to_test)
 
 SlowLorisTest.start()
 
