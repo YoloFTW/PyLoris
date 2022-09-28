@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/YoloFTW/pylorris.svg)](https://github.com/YoloFTW/pylorris/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/YoloFTW/pylorris.svg)](https://github.com/YoloFTW/pylorris/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -36,11 +36,21 @@ connection attempts from clients.
 
 For Installation With PyPI
 
-TODO: Add Installation
+```sh
+$ pip install PyLoris
+```
 
 ## 🎈 Usage <a name="usage"></a>
 
-TODO: Add usage
+```python
+from PyLoris import SlowLoris
+
+SlowLorisTest = SlowLoris("your-site.com", 2)
+
+SlowLorisTest.start()
+
+print(SlowLorisTest.vulnerable)
+```
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@YoloFTW](https://github.com/YoloFTW)
