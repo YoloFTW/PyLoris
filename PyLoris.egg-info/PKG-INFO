@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyLoris
-Version: 1.0.0
+Version: 1.0.1
 Summary: Test websites for slow loris
 Home-page: UNKNOWN
 Author: YoloFTW
@@ -15,12 +15,8 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">PyLoris</h3>
 
 <div align="center">
 
@@ -32,10 +28,6 @@ License-File: LICENSE
 </div>
 
 ---
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
 
 ## 📝 Table of Contents
 
@@ -62,7 +54,7 @@ $ pip install PyLoris
 ```python
 from PyLoris import SlowLoris
 
-SlowLorisTest = SlowLoris("your-site.com", 2)
+SlowLorisTest = SlowLoris("your-site.com", number_of_open_socket_to_test)
 
 SlowLorisTest.start()
 
