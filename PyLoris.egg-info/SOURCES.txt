@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-PyLoris/__init__.py
-PyLoris/slowloris.py
-PyLoris.egg-info/PKG-INFO
-PyLoris.egg-info/SOURCES.txt
-PyLoris.egg-info/dependency_links.txt
-PyLoris.egg-info/top_level.txt
