@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PyLorisPyPITest/__init__.py
+PyLorisPyPITest/slowloris.py
+PyLorisPyPITest.egg-info/PKG-INFO
+PyLorisPyPITest.egg-info/SOURCES.txt
+PyLorisPyPITest.egg-info/dependency_links.txt
+PyLorisPyPITest.egg-info/top_level.txt
