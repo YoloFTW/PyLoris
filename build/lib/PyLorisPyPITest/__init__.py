@@ -1,1 +1,0 @@
-from PyLorisPyPITest.slowloris import SlowLoris
