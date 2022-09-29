@@ -1,3 +1,4 @@
+from .cleanUrl import cleanUrl
 import socket
 import time
 import random
@@ -34,7 +35,7 @@ class SlowLoris:
 
             try:
                 #get ip address
-                ip = socket.gethostbyname("%s" %self.target)
+                ip = socket.gethostbyname("%s" %cleanUrl(self.target))
 
             except:
                 raise ValueError("website connot be reached. ensure you spelt it correctly")
